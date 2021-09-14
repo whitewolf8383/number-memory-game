@@ -15,37 +15,39 @@
       <h1>Number Memory Game</h1>
     </header>
     <main>
-      <div>
-        <p>Rules: This memory game is a spinoff from the traditional Simon game. To 
+      <div class="rules-div">
+        <p><b>Rules:</b> This memory game is a spinoff from the traditional Simon game. To 
           start the game, simply push the start button. The game will start by showing 
           you a number. Click on the number and hit the submit button. If you're correct, 
           it'll play the next number. You will need to repeat all numbers from the start 
           of the game to successfully pass the current stage. The game does not repeat 
           the prevous numbers, so you'll need to remember them. Try and make it as far 
-          as possible. A counter will keep track of how fgar you make it.</p>
+          as possible. A counter will keep track of how far you make it.</p>
+        <button class="hide-rules">Hide Rules</button>
       </div>
-      <div>
-        <h2>Round: <span class="round">1</span></h2>
+      <div class="game-board">
+        <h2>Round: <span class="round">#</span></h2>
         <div>
-          <button id="1">1</button>
-          <button id="2">2</button>
-          <button id="3">3</button>
+          <button id="one" value="1">1</button>
+          <button id="two" value="2">2</button>
+          <button id="three" value="3">3</button>
         </div>
         <div>
-          <button id="4">4</button>
-          <button id="5">5</button>
-          <button id="6">6</button>
+          <button id="four" value="4">4</button>
+          <button id="five" value="6">5</button>
+          <button id="six" value="6">6</button>
         </div>
         <div>
-          <button id="7">7</button>
-          <button id="8">8</button>
-          <button id="9">9</button>
+          <button id="seven" value="7">7</button>
+          <button id="eight" value="8">8</button>
+          <button id="nine" value="9">9</button>
         </div>
         <button class="start">Start</button>
+        <p class="correctAnswer"></p>
       </div>
     </main>
     <footer>
-      <small>Keith J. Francis | 2021</small>
+      <small>Keith J. Francis | <span class="date">date</span></small>
       <small>Created for ICT4580</small>
       <small>University of Denver, University College</small>
     </footer>
