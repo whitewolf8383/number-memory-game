@@ -17,6 +17,9 @@ header h1 {
   letter-spacing: 2px;
   text-align: center;
 }
+main {
+  padding-bottom: 60px;
+}
 main div {
   margin: auto;
   text-align: center;
@@ -79,32 +82,45 @@ footer small{
   text-align: center;
 }
 
-@media screen and (max-width: 1400px) {
-body {
-  background-color: rgb(238, 138, 134);
-}
-}
 
 @media screen and (max-width: 1200px) {
-body {
-  background-color: rgb(230, 124, 230);
-}
-}
-
-@media screen and (max-width: 992px) {
-body {
-  background-color: rgb(129, 68, 153);
-}
+  main div {
+    width: 800px;
+  }
+  main div p {
+    width: 700px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-body {
-  background-color: rgb(55, 44, 116);
-}
+  main div {
+    width: 575px;
+  }
+  main div p {
+    width: 500px;
+  }
 }
 
 @media screen and (max-width: 575px) {
-body {
-  background-color: aqua;
+  main div {
+    width: 350px;
+  }
+  main div p {
+    width: 335px;
+  }
 }
+
+@media screen and (max-width: 360px) {
+  header h1 {
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 2px;
+  }
+  main div {
+    width: 315px;
+  }
+  main div p {
+    width: 305px;
+  }
 }

@@ -15,6 +15,7 @@ let buttons = document.querySelectorAll('button:not(.start)');
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     playerNumbers.push(button.value);
+    console.log(playerNumbers);
   })
 })
 
